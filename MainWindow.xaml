@@ -4,12 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d"
+        mc:Ignorable="d" FontSize="30"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="按钮 " HorizontalAlignment="Left" Margin="87,152,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="按钮 " HorizontalAlignment="Left" Margin="472,85,0,0" VerticalAlignment="Top" Click="Button_Click" RenderTransformOrigin="0.64,0.648"/>
         <TextBlock HorizontalAlignment="Left" Margin="75,79,0,0" TextWrapping="Wrap" Text="用户名" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="133,79,0,0" TextWrapping="Wrap" Text="输入内容" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="207,79,0,0" TextWrapping="Wrap" Text="输入内容" VerticalAlignment="Top" Width="227"/>
 
     </Grid>
 </Window>

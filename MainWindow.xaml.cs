@@ -25,12 +25,27 @@ namespace WpfApp1
             InitializeComponent();
         }
 
+        private string _value;
+
+        public string Value
+        {
+            get { return _value; }
+            set { _value = value;
+                this.tbName.Foreground = Brushes.Red;
+            }
+        }
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            this.Value = "100";
+
             // MessageBox.Show("hello wpf!!!");
-            string userName = this.tbName.Text;
-            if (userName == "Jovan")
-                MessageBox.Show("确认通过");
+            //this.tbname.text = "jovan";
+            //string username = this.tbname.text;
+            //if (username == "jovan")
+            //    this.tbname.foreground = brushes.orange;
+            //  MessageBox.Show("确认通过");
             //this.tbName.Text = "Jovan";
         }
     }
